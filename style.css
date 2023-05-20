@@ -1,0 +1,57 @@
+body {
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+  flex-direction: column;
+  min-height: 97vh;
+}
+.two {
+  display: flex;
+  gap: 20px;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: white;
+}
+.second h1 {
+  text-align: start;
+  font-size: 3.5em;
+  margin-block-end: 0;
+  font-family: "Poppins", sans-serif;
+}
+.second p {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+button {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 15px 50px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+  .two {
+    flex-direction: column;
+  }
+  .first img {
+    width: 100%;
+  }
+  .second {
+    align-items: center;
+    text-align: center;
+  }
+  .second h1 {
+    text-align: center;
+  }
+  button {
+    padding: 14px 50px;
+  }
+}
